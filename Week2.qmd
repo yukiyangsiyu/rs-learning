@@ -1,7 +1,6 @@
-# Week 2
+---
+title: "week2"
 
-This is a text.
+---
 
-```{r}
-1 + 1
-```
+bdssvfs
