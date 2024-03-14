@@ -30,14 +30,14 @@
   {
     "objectID": "week1.html",
     "href": "week1.html",
-    "title": "1  week1",
+    "title": "1  Week 1",
     "section": "",
-    "text": "introduction\nbackground"
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "week3.html",
     "href": "week3.html",
-    "title": "3  week 3",
+    "title": "2  week 3",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
