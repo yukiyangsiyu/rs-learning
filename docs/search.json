@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "rs",
+    "title": "Remotely sensing - Learnig diary",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "About\nHi! I’m Siyu Yang. My undergraduate degree was in management and I got this degree in University Electronic Science and Technology of China. During my undergraduate period i learnt a range of things - not only the knowledge about management, but also plenty of city-related knowledge such as urban planning and design as well as a little bit coding technique. I really fancy in cities and i thought future cities are inseparable from the development of science and technology. That’s why i chose to study in CASA.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "intro.html",
@@ -40,5 +40,19 @@
     "title": "2  week 3",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "3  Week 4",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "4  Week 5",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   }
 ]

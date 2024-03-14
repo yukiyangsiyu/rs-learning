@@ -1,8 +1,6 @@
-# Preface {.unnumbered}
+# About {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Hi! I'm Siyu Yang. My undergraduate degree was in management and I got this degree in University Electronic Science and Technology of China. During my undergraduate period i learnt a range of things - not only the knowledge about management, but also plenty of city-related knowledge such as urban planning and design as well as a little bit coding technique. I really fancy in cities and i thought future cities are inseparable from the development of science and technology. That's why i chose to study in CASA.
 
 ```{r}
 1 + 1
