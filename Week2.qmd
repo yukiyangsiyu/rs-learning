@@ -1,6 +1,0 @@
----
-title: "week2"
-
----
-
-bdssvfs
