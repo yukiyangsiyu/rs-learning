@@ -1,7 +1,9 @@
 # About {.unnumbered}
 
-Hi! I'm Siyu Yang. My undergraduate degree was in management and I got this degree in University Electronic Science and Technology of China. During my undergraduate period i learnt a range of things - not only the knowledge about management, but also plenty of city-related knowledge such as urban planning and design as well as a little bit coding technique. I really fancy in cities and i thought future cities are inseparable from the development of science and technology. That's why i chose to study in CASA.
+![](images/IMG_4111-01.JPG){fig-align="center" width="598"}
 
-```{r}
-1 + 1
-```
+Hi! I'm Siyu Yang. I earned my undergraduate degree in management from the University of Electronic Science and Technology of China. During my undergraduate studies, I learned a wide range of subjects---not only management knowledge but also plenty of city-related topics such as urban planning, design, and even some coding techniques. I have a keen interest in cities and believe that the future of urban development is inseparable from the advancement of science and technology. This led me to choose CASA for further specialization, aiming to deepen my understanding of how technology can be applied to urban challenges.
+
+While I have not yet had the opportunity to gain formal professional experience, my academic journey has been rich with involvement in various research projects and volunteer initiatives. One notable project was my engagement in urban planning research for Chengdu Wenjiang District, where I conducted thorough field research and analyzed its developmental challenges. This effort, particularly praised by my professors, underscores my proactive involvement in urban planning. Additionally, my work with a volunteer team, where I participated in teaching and organizing fundraising events in disadvantaged areas, not only taught me the true essence of dedication but also deepened my understanding of the critical role of urban development in enhancing social welfare and education.
+
+Realizing that data is indispensable to our lives and the development of cities, I began to understand the urgent need for data processing skills. This website is my remotely sensing learning diary. Through this module, I expect to learn how to apply technology, especially remotely sensing technology, to address global challenges such as climate change, urban planning and environmental protection, thereby improving the ability of urban sustainable development.
