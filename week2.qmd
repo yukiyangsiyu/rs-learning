@@ -1,26 +1,10 @@
-# week 2
+# week 2-Sentinel 1
 
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming. 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AFoAUQBBAHgAQQBEAGcAQQBNAFEAQQA1AEEARABZAEEATQBBAEEAMQBBAEMAMABBAE0AQQBCAGgAQQBHAE0AQQBaAEEAQQB0AEEARABRAEEAWgBnAEIAaABBAEcAVQBBAEwAUQBBADQAQQBHAEkAQQBPAFEAQQA1AEEAQwAwAEEATwBRAEIAagBBAEQARQBBAFkAZwBBADMAQQBHAEkAQQBaAEEAQQAzAEEARwBNAEEATQBBAEIAbQBBAEQARQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAegBBAEQATQBBAAoAcAByAGUAZgBpAHgAOgAKAHMAbwB1AHIAYwBlADoATABRAEEAdABBAEMAMABBAEMAZwBCADAAQQBHAGsAQQBkAEEAQgBzAEEARwBVAEEATwBnAEEAZwBBAEMASQBBAFYAdwBCAGwAQQBHAFUAQQBhAHcAQQBnAEEARABJAEEASQBnAEEASwBBAEcASQBBAGEAUQBCAGkAQQBHAHcAQQBhAFEAQgB2AEEARwBjAEEAYwBnAEIAaABBAEgAQQBBAGEAQQBCADUAQQBEAG8AQQBJAEEAQgB5AEEARwBVAEEAWgBnAEIAbABBAEgASQBBAFoAUQBCAHUAQQBHAE0AQQBaAFEAQgB6AEEAQwA0AEEAWQBnAEIAcABBAEcASQBBAEMAZwBBAHQAQQBDADAAQQBMAFEAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
-
-Here is a short presentation discussing the Sentinel 1 mission (technically this is two satellites and not 1):
-
----
-title: "Week 2"
-bibliography: references.bib
----
-
----
-title: "Week 2"
-bibliography: references.bib
----
-
-Here is a short presentation discussing the Sentinel 1 mission (technically this is two satellites and not 1):
+Here is a short presentation discussing the Sentinel 1 mission:
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
   url = "https://yukiyangsiyu.github.io/Week2/",
-  ratio = "16:9")
+  ratio = "4:3")
 
 ```
