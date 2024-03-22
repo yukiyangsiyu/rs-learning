@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">week 2-Sentinel 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2-Sentinel 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -126,13 +126,31 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4-Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5-Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6-Classification 1</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7-Classification 2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8-Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -151,14 +169,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">3.1.1</span> What is remote sensing?</a></li>
-  <li><a href="#active-and-passive-sensors" id="toc-active-and-passive-sensors" class="nav-link" data-scroll-target="#active-and-passive-sensors"><span class="header-section-number">3.1.2</span> Active and passive sensors</a></li>
-  <li><a href="#electromagnetic-radiation" id="toc-electromagnetic-radiation" class="nav-link" data-scroll-target="#electromagnetic-radiation"><span class="header-section-number">3.1.3</span> Electromagnetic radiation</a></li>
-  <li><a href="#four-resolutions" id="toc-four-resolutions" class="nav-link" data-scroll-target="#four-resolutions"><span class="header-section-number">3.1.4</span> Four resolutions</a></li>
-  <li><a href="#the-choice-of-data" id="toc-the-choice-of-data" class="nav-link" data-scroll-target="#the-choice-of-data"><span class="header-section-number">3.1.5</span> The choice of data</a></li>
+  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections"><span class="header-section-number">3.1.1</span> <strong>Corrections</strong></a></li>
+  <li><a href="#data-joining" id="toc-data-joining" class="nav-link" data-scroll-target="#data-joining"><span class="header-section-number">3.1.2</span> <strong>Data Joining</strong></a></li>
+  <li><a href="#enhancements" id="toc-enhancements" class="nav-link" data-scroll-target="#enhancements"><span class="header-section-number">3.1.3</span> <strong>Enhancements</strong></a></li>
   </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#ratio-normalised-difference-vegetation-index-ndvi" id="toc-ratio-normalised-difference-vegetation-index-ndvi" class="nav-link" data-scroll-target="#ratio-normalised-difference-vegetation-index-ndvi"><span class="header-section-number">3.2.1</span> Ratio: Normalised Difference Vegetation Index (NDVI)</a></li>
+  <li><a href="#texture" id="toc-texture" class="nav-link" data-scroll-target="#texture"><span class="header-section-number">3.2.2</span> Texture</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -183,38 +205,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <section id="summary" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> summary</h2>
-<section id="what-is-remote-sensing" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="what-is-remote-sensing"><span class="header-section-number">3.1.1</span> What is remote sensing?</h3>
-<p>Remote sensing is like a high-tech camera that takes pictures of the Earth. These “cameras” are installed on various platforms, such as high-altitude aircraft or drones and satellites. They capture details of the Earth’s surface <strong>from long distances</strong> and help us understand and monitor changes in the environment.</p>
-</section>
-<section id="active-and-passive-sensors" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">3.1.2</span> Active and passive sensors</h3>
-<p>As mentioned above, these “cameras” are sensors. The difference between active and passive sensors mainly lies in <strong>the source of energy</strong>: passive sensors rely on energy reflected from the sun or artificial light sources, while active sensors can actively emit electormagentic waves (such as radar waves or X-rays) and receive the signals reflected back. This significantly improves the performance and accuracy of active sensors at night or in adverse weather conditions.</p>
-</section>
-<section id="electromagnetic-radiation" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="electromagnetic-radiation"><span class="header-section-number">3.1.3</span> Electromagnetic radiation</h3>
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<section id="corrections" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="corrections"><span class="header-section-number">3.1.1</span> <strong>Corrections</strong></h3>
 <ul>
-<li><p>Remote sensing sensors primarily focus on receiving electromagnetic radiation, which includes <strong>all waves reflected from the surface of an object</strong>.</p></li>
-<li><p>Electromagnetic wave has two components: electric fields (E) and magnetic fields (F). The electric and magnetic fields are <strong>perpendicular</strong> to each other, and they are also perpendicular to the direction of propagation of the wave.</p></li>
-<li><p>The main elements of electromagnetic waves include: <strong>wavelength</strong> (The distance between two adjacent wave crests) <strong>frequency</strong> (the number of vibrations per unit time, which determines the color or energy level of the wave) <strong>amplitude</strong> (the height of the wave, which affects the intensity or brightness of the wave) <strong>speed</strong> ( The propagation speed of electromagnetic waves in vacuum is usually the speed of light, which is approximately 3.00×10^8 meters/second).</p></li>
-<li><p>The electromagnetic <strong>spectrum</strong> is the range of electromagnetic radiation formed by wavelength or frequency, including short-wave gamma rays, X-rays, and ultraviolet light, through the spectrum visible to the human eye (red, orange, yellow, green, blue, indigo, violet), to long-wave infrared rays, microwaves, and radio waves .</p></li>
-<li><p>Electromagnetic waves <strong>interact</strong> with the Earth’s <strong>surface</strong> by being absorbed, transmitted, or reflected. The specific interaction depends on the surface material and the wave’s properties. In the <strong>atmosphere</strong>, electromagnetic energy encounters particles that can scatter the waves. The scattering varies by the size of the particles relative to the wavelength: Rayleigh scattering occurs with smaller particles, Mie scattering with similar-sized particles, and non-selective scattering with larger particles. This scattering affects the colors we see in the sky, especially at sunrise and sunset when the path through the atmosphere is longer, leading to more scattering of shorter wavelengths and allowing longer wavelengths like red and orange to dominate the sky.</p></li>
+<li><strong>Geometric Corrections:</strong> Addressing distortions due to view angle, topography, wind, and Earth’s rotation. Algorithms such as linear regression, Helmert transformation, polynomial transformations (1st to 3rd degree), Thin Plate Spline (TPS), and projective transformation are chosen based on their ability to minimize RMSE.</li>
+<li><strong>Atmospheric Corrections:</strong> Overcoming atmospheric scattering and attenuation effects via methods like Empirical methods, Dark Object Subtraction(DOS), Pseudo-invariant Features (PIFs) or through complex atmospheric radiative transfer models.</li>
+<li><strong>Topographic/Orthorectification Corrections:</strong> Adjusting the viewing angle to treat slope and elevation distortions, often requiring solar zenith and azimuth angles through techniques like Cosine correction, Minnaert correction, Statistical Empirical correction, and C Correction (an advancement of the Cosine correction).</li>
+<li><strong>Radiometric Calibration:</strong> Converting Digital Numbers to spectral radiance, adjusting for the sensor’s measurements of upwelling radiation.</li>
 </ul>
 </section>
-<section id="four-resolutions" class="level3" data-number="3.1.4">
-<h3 data-number="3.1.4" class="anchored" data-anchor-id="four-resolutions"><span class="header-section-number">3.1.4</span> Four resolutions</h3>
-<p><strong>Spectral</strong> resolution: refers to the sensor’s ability to distinguish different wavelengths (or frequencies) of electromagnetic radiation. Different features on Earth’s surface have unique spectral signatures which can be detected by the sensor. Hyperspectral remote sensing can distinguish hundreds of narrow wavelength bands for detailed analysis of material composition.</p>
-<p><strong>Spatial</strong> resolution: refers to the size of the ground area represented by one pixel in the image, which determines the level of detail of the remote sensing image. High spatial resolution means more detailed ground information.</p>
-<p><strong>Temporal</strong> resolution: refers to how often the sensor re-covers the same area and is critical for monitoring changes (such as vegetation growth, urban expansion).</p>
-<p><strong>Radiation</strong> resolution: refers to the sensor’s ability to detect and distinguish between different radiation intensity levels. High radiometric resolution helps identify weak radiometric changes.</p>
+<section id="data-joining" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="data-joining"><span class="header-section-number">3.1.2</span> <strong>Data Joining</strong></h3>
+<ul>
+<li><strong>Mosaicking:</strong> The process of combining multiple images, ensuring they blend seamlessly at the edges, often involves histogram matching and feathering.</li>
+</ul>
 </section>
-<section id="the-choice-of-data" class="level3" data-number="3.1.5">
-<h3 data-number="3.1.5" class="anchored" data-anchor-id="the-choice-of-data"><span class="header-section-number">3.1.5</span> The choice of data</h3>
-<p>When selecting remote sensing data, it’s crucial to consider both environmental and sensor constraints which dictate the suitability of data types for specific needs. For instance, active remote sensing techniques like radar are preferable during cloudy conditions as they can penetrate cloud cover. High spectral resolution data might be required for detailed vegetation analysis. Thus, the choice of remote sensing data hinges on the balance of these factors alongside the mission’s objectives, environmental conditions, and sensor capabilities.</p>
+<section id="enhancements" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="enhancements"><span class="header-section-number">3.1.3</span> <strong>Enhancements</strong></h3>
+<ul>
+<li>Enhancements refine the visual and analytical quality of satellite imagery without altering the actual data values.</li>
+<li>Methods including Contrast Enhancement, Ratio, Filtering, PCA, and Texture Analysis.</li>
+<li>Techniques such as contrast enhancement make images more interpretable, while PCA reduces dimensionality, isolating significant changes in multi-temporal analysis.</li>
+</ul>
+</section>
+</section>
+<section id="application" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
+<section id="ratio-normalised-difference-vegetation-index-ndvi" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="ratio-normalised-difference-vegetation-index-ndvi"><span class="header-section-number">3.2.1</span> Ratio: Normalised Difference Vegetation Index (NDVI)</h3>
+<p>Pei, Fengsong, et al(2021) explored the use of NDVI in monitoring extreme precipitation events in the Middle and Lower Reaches of the Yangtze River (MLR-YR) in China from 1982 to 2012. It evaluates how minimum, mean, and maximum NDVI values, derived from satellite data, can reflect the variability in vegetation activity due to extreme precipitation changes. The research finds that maximum NDVI is particularly responsive to these changes, and both maximum and minimum NDVI demonstrate significant spatial variability in response to extreme precipitation</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/3.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>This set of maps displays the standard deviation of the Normalized Difference Vegetation Index (NDVI) in the Middle and Lower Reaches of the Yangtze River in China. <strong>Map (a)</strong> represents the standard deviation of the minimum NDVI values, indicating the variability of the lowest NDVI readings, which might reflect the least vegetative state or periods of low vegetation health. <strong>Map (b)</strong> shows the standard deviation of the mean NDVI, which represents the average variability in vegetation greenness over time. <strong>Map (c)</strong> depicts the standard deviation of the maximum NDVI values, highlighting the variability in the peak vegetation period or the healthiest vegetative state. The different shades of green to yellow across the maps indicate areas with varying levels of NDVI variability. Areas with higher standard deviation values, shown in darker colors, may experience more significant changes in vegetation due to various factors such as seasonal changes, agricultural practices, or extreme weather events. These maps are useful for identifying patterns of vegetation dynamics and potential areas of ecological stress or change.</p>
+</section>
+<section id="texture" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="texture"><span class="header-section-number">3.2.2</span> Texture</h3>
+<p>James R. Irons and Gary W. Petersen explores the application of image texture in the digital analysis of remotely sensed data.They develops software to quantify image texture and applies it to both image enhancement and thematic classification of remotely sensed Landsat-2 MSS data.They use SUBTEXT to calculate various local properties within pixel windows to generate texture transforms, which provide discrete measurements for each pixel.These texture transforms effectively delineate edges and enhance imagery.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/4.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>This week’s content was exponentially more difficult for me. There were too many unfamiliar terms, and the mathematical logic behind each method was difficult for me to understand. In comparison, the correction part is easier to understand, it’s like data cleaning. However, unlike panel data, remote sensing data contain a large amount of spatiotemporal information, so unique methods must be used to correct them. But many remote sensing products come pre-corrected, which greatly simplifies the analyst’s workflow.</p>
+<p>The enhancement part was harder for me to understand, so I read the literature to see how academics were using enhancement techniques. Finally I came to the conclusion that enhancement is a method to pursue specific remote sensing information. Similar to when we deal with panel data, we need to find the variance or average for different needs, and the same is true for enhancement. It is based on data reprocessing for research purposes.</p>
+<p>Correcting, joining data sets, and enhancements together constitute remote sensing data preprocessing. Advances in preprocessing not only enhance visual interpretation of remote sensing but also significantly improve spectral accuracy for a variety of applications.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -454,12 +498,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">week 2-Sentinel 1</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2-Sentinel 1</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4-Policy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

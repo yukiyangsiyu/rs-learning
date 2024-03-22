@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Siyu Yang">
-<meta name="dcterms.date" content="2024-03-22">
 
-<title>Remotely sensing - Learnig diary</title>
+<title>Remotely sensing - Learnig diary - 7&nbsp; Week 7-Classification 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week1.html" rel="next">
+<link href="./week8.html" rel="next">
+<link href="./week6.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7-Classification 2</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -102,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -144,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7-Classification 2</span></span></a>
   </div>
 </li>
@@ -170,7 +169,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#object-based-image-analysis-obia" id="toc-object-based-image-analysis-obia" class="nav-link" data-scroll-target="#object-based-image-analysis-obia"><span class="header-section-number">7.1.1</span> Object-Based Image Analysis (OBIA)</a></li>
+  <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis"><span class="header-section-number">7.1.2</span> Sub-Pixel Analysis</a></li>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="header-section-number">7.1.3</span> Accuracy Assessment</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.1.4</span> Conclusion</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#part-1" id="toc-part-1" class="nav-link" data-scroll-target="#part-1"><span class="header-section-number">7.2.1</span> part 1</a></li>
+  <li><a href="#part-2" id="toc-part-2" class="nav-link" data-scroll-target="#part-2"><span class="header-section-number">7.2.2</span> part 2</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -179,26 +190,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Remotely sensing - Learnig diary</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7-Classification 2</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Siyu Yang </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -206,16 +205,76 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="about" class="level1 unnumbered">
-<h1 class="unnumbered">About</h1>
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<p>In the realm of remote sensing, accurately classifying Earth observation (EO) images is paramount. Traditional pixel-based classification methods, while useful, often overlook the spatial relationship between pixels, known as adjacency. This oversight can be problematic due to the geographic principle that spatial entities tend to be more similar to their immediate neighbors than to those further away. It’s also rare for a pixel to be completely homogenous, meaning it typically comprises a mixture of different land covers. To address these challenges, this week we delve into Object-Based Image Analysis (OBIA) and sub-pixel analysis, which offer a more refined approach to classification tasks.</p>
+<section id="object-based-image-analysis-obia" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">7.1.1</span> Object-Based Image Analysis (OBIA)</h3>
+<p>OBIA represents a shift from pixel to object-level analysis. Rather than analyzing each pixel individually, OBIA groups pixels into superpixels or supercells based on their spectral homogeneity. This process is adeptly handled by the Simple Linear Iterative Clustering (SLIC) algorithm, which creates these superpixels by:</p>
+<ul>
+<li>Initializing centroids within the image based on a predefined number of superpixels.</li>
+<li>Iteratively clustering pixels based on their spectral similarity and proximity to centroids.</li>
+<li>Adjusting centroids and boundaries to minimize intra-object variance and maximize inter-object distinction.</li>
+</ul>
+<p>The process relies on two key hyperparameters: the distance between initial centroids (s) and the compactness factor (m), which balances color similarity and proximity. The output is a segmented image that better reflects the true spatial structure of the observed area.</p>
+</section>
+<section id="sub-pixel-analysis" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">7.1.2</span> Sub-Pixel Analysis</h3>
+<p>Where OBIA groups pixels, sub-pixel analysis goes a level deeper by examining the composition within individual pixels. Recognizing that pixels often contain a mix of land cover types, sub-pixel analysis estimates the proportion of each cover type present. Spectral Mixture Analysis (SMA) is commonly employed for this purpose, using spectrally pure endmembers as references to deconstruct a pixel’s spectral signature into its constituent parts.</p>
+<p>The methodology can be outlined as follows:</p>
+<ul>
+<li>Identify spectrally pure endmembers that represent distinct land cover types.</li>
+<li>Apply a matrix-based approach to solve for the proportions of each land cover type within the pixel, often visualized through a V-I-S (Vegetation-Impervious surface-Soil) model.</li>
+</ul>
+</section>
+<section id="accuracy-assessment" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.3</span> Accuracy Assessment</h3>
+<p>An integral part of these techniques is accuracy assessment. New datasets are used to validate classification outputs, with strategies such as spatial cross-validation enhancing the reliability of the results. Spatial cross-validation partitions the data into spatially disjoint sets, avoiding the pitfall of training and testing the model on autocorrelated samples. This method ensures that the model’s performance is tested on geographically independent data points.</p>
+</section>
+<section id="conclusion" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.1.4</span> Conclusion</h3>
+<p>OBIA and sub-pixel analysis present a substantial improvement over traditional methods, acknowledging the complex nature of spatial data. These techniques not only consider the homogeneity within pixels but also the relatedness of adjacent areas, thus creating more accurate and geographically sensible classification models.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<section id="part-1" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="part-1"><span class="header-section-number">7.2.1</span> part 1</h3>
+<p>In the past few weeks, I have been paying close attention to Ahmedabad in India because of its high temperature hazards. In the application of this chapter, I discovered another way to mitigate the dangers of heat. Kai Liu and colleagues conducted a study on urban surface energy fluxes in Suzhou, China, using Sub-Pixel Analysis via Multiple Endmember Spectral Mixture Analysis (MESMA) to assess the detailed composition of urban land cover. This method allowed for the detailed assessment of vegetation fractional coverage (VFC) and the percentage of impervious surface area (ISA%) within each pixel of satellite imagery, beyond the traditional one land cover type per pixel assumption.</p>
+<p>This are maps of land coverage, LCTs classification and LCT at 1040 LT, derived from 30-m LANDSAT-5 TM acquired on 24, May 2010. (<strong>a</strong>) Vegetation fraction coverage; (<strong>b</strong>) impervious surface coverage; (<strong>c</strong>) LCT classification; (<strong>d</strong>) land surface temperature.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/IMG_4111-01.JPG" class="img-fluid figure-img" width="598"></p>
+<p><img src="images/10.png" class="img-fluid figure-img" width="500"></p>
 </figure>
 </div>
-<p>Hi! I’m Siyu Yang. I earned my undergraduate degree in management from the University of Electronic Science and Technology of China. During my undergraduate studies, I learned a wide range of subjects—not only management knowledge but also plenty of city-related topics such as urban planning, design, and even some coding techniques. I have a keen interest in cities and believe that the future of urban development is inseparable from the advancement of science and technology. This led me to choose CASA for further specialization, aiming to deepen my understanding of how technology can be applied to urban challenges.</p>
-<p>While I have not yet had the opportunity to gain formal professional experience, my academic journey has been rich with involvement in various research projects and volunteer initiatives. One notable project was my engagement in urban planning research for Chengdu Wenjiang District, where I conducted thorough field research and analyzed its developmental challenges. This effort, particularly praised by my professors, underscores my proactive involvement in urban planning. Additionally, my work with a volunteer team, where I participated in teaching and organizing fundraising events in disadvantaged areas, not only taught me the true essence of dedication but also deepened my understanding of the critical role of urban development in enhancing social welfare and education.</p>
-<p>Realizing that data is indispensable to our lives and the development of cities, I began to understand the urgent need for data processing skills. This website is my remotely sensing learning diary. Through this module, I expect to learn how to apply technology, especially remotely sensing technology, to address global challenges such as climate change, urban planning and environmental protection, thereby improving the ability of urban sustainable development.</p>
+<p>The research results revealed two key findings:</p>
+<ul>
+<li><p>Cooling Effect of Vegetation: Areas with higher vegetation fractional coverage (VFC) showed a cooling effect, indicated by higher latent heat flux (LE) and lower land surface temperatures (LST). This underscores the importance of vegetation in urban areas for mitigating heat through evapotranspiration.</p></li>
+<li><p>Heat Retention in Urbanized Areas: Urbanized zones with a higher percentage of impervious surface area (ISA%) exhibited increased sensible heat flux (H) and higher LST, indicating that these areas absorb and retain more heat compared to their less urbanized counterparts.</p></li>
+</ul>
+<p>These findings highlight the significant impact of urban land cover composition on the thermal environment, emphasizing the need for integrating green spaces in urban planning to combat the urban heat island effect and promote sustainable urban living.</p>
+</section>
+<section id="part-2" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="part-2"><span class="header-section-number">7.2.2</span> part 2</h3>
+<p>However, except Ahmedabad, there is another city in India, Delhi, which is also facing problems such as land degradation and desertification due to its geographical location and urbanization pressure.</p>
+<p>Atiqur Rahman and his team leveraged remote sensing data and Geographic Information System (GIS) techniques to track land use and land cover changes in the North-West District of Delhi from 1972 to 2003. They combined high-resolution ASTER images with historical Survey of India Toposheets, using digitization, geo-referencing, and image classification methods, including supervised classification with the Maximum Likelihood Classifier. Through change detection analysis, they documented significant shifts from agricultural land to urban areas.The study validated the classification results against ground truth data to ensure accuracy, and integrated the findings into GIS for enhanced analysis and visualization. The research results are as follows.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/7.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>This picture shows:</p>
+<ul>
+<li><p>A significant reduction in agricultural land, from 92.06% in 1972 to 64.71% in 2003.</p></li>
+<li><p>An increase in built-up areas from 6.31% to 34% over the same period, indicating urban expansion.</p></li>
+<li><p>Urban growth has primarily occurred at the expense of agricultural lands.</p></li>
+<li><p>Population growth due to migration from smaller cities and rural areas of Delhi is a primary driver of these land use changes.</p></li>
+</ul>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>This week I learned two more in-depth and more refined classification methods. These contents include parts that I am familiar with. For example, I have been exposed to the concept of spatial autocorrelation in the CASA0005 course, but the overall concept is still a bit obscure to me. Difficult to understand. So I looked for relevant papers to read, and was pleasantly surprised to find that this new classification method plays a very important role in classifying land coverage, and I got a new method of mitigating thermal hazards from the paper, which is consistent with my policy in the fourth week. Some of the contents echoed, giving me a sense of integrated knowledge. It can also be seen that overheating of the earth’s surface is a global problem affecting society, economy and environment. As a result, every government is trying to cool down their own land. This requires accurate identification of land types. Object-Based Image Analysis (OBIA) and Sub-Pixel Analysis are both good methods for identifying land types.</p>
 
 
 </section>
@@ -456,10 +515,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./week6.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6-Classification 1</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week1.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1-Introduction to Remote Sensing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week8.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8-Temperature</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

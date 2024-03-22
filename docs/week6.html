@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Siyu Yang">
-<meta name="dcterms.date" content="2024-03-22">
 
-<title>Remotely sensing - Learnig diary</title>
+<title>Remotely sensing - Learnig diary - 6&nbsp; Week 6-Classification 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week1.html" rel="next">
+<link href="./week7.html" rel="next">
+<link href="./week5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6-Classification 1</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -102,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -138,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link">
+  <a href="./week6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6-Classification 1</span></span></a>
   </div>
 </li>
@@ -170,7 +169,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#classification-and-regression-trees-cart" id="toc-classification-and-regression-trees-cart" class="nav-link" data-scroll-target="#classification-and-regression-trees-cart"><span class="header-section-number">6.1.1</span> Classification and Regression Trees (CART)</a></li>
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest"><span class="header-section-number">6.1.2</span> Random Forest</a></li>
+  <li><a href="#support-vector-machines-svm" id="toc-support-vector-machines-svm" class="nav-link" data-scroll-target="#support-vector-machines-svm"><span class="header-section-number">6.1.3</span> Support Vector Machines (SVM)</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -179,26 +185,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Remotely sensing - Learnig diary</h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6-Classification 1</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Siyu Yang </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -206,16 +200,73 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="about" class="level1 unnumbered">
-<h1 class="unnumbered">About</h1>
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<p>This week’s curriculum provided an in-depth look at the use of machine learning for classification in remote sensing.</p>
+<section id="classification-and-regression-trees-cart" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="classification-and-regression-trees-cart"><span class="header-section-number">6.1.1</span> Classification and Regression Trees (CART)</h3>
+<ul>
+<li>Employs a tree structure where nodes denote features, branches represent decision rules based on feature values, and leaf nodes indicate predicted class labels (for classification) or numerical values (for regression).</li>
+<li>Uses Gini impurity (for classification) or the lowest sum of squared residuals (SSR) (for regression) to recursively partition the feature space, aiming to enhance homogeneity within subsets.</li>
+<li>Includes mechanisms to prevent overfitting, such as setting a maximum depth for each node and a minimum number of samples per node, thus improving generalization.</li>
+</ul>
+</section>
+<section id="random-forest" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="random-forest"><span class="header-section-number">6.1.2</span> Random Forest</h3>
+<ul>
+<li>A collective of decision trees, each serving as a weak learner, integrated using ensemble learning techniques to bolster overall predictive performance.</li>
+<li>Incorporates randomness through bootstrapping (resampling with replacement) and feature randomness, ensuring a diverse set of trees and reducing feature correlation.</li>
+<li>For prediction, it aggregates the outcomes of all trees, selecting the most frequent class (classification) or averaging the results (regression) to produce a final decision.</li>
+</ul>
+</section>
+<section id="support-vector-machines-svm" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="support-vector-machines-svm"><span class="header-section-number">6.1.3</span> Support Vector Machines (SVM)</h3>
+<ul>
+<li>Acts as a linear binary classifier, akin to logistic regression but with a focus on maximizing the margin between two classes.</li>
+<li>The classifier identifies support vectors and constructs a separating hyperplane, termed the maximum margin classifier.</li>
+<li>Adjustments to parameters like C and gamma allow the model to balance the margin’s width against the error rate, affecting the classifier’s sensitivity to training data distribution.</li>
+</ul>
+<p><strong>Within the realm of remote sensing, supervised and unsupervised learning play pivotal roles in image classification</strong></p>
+<ul>
+<li><p><strong>Supervised Learning</strong> is used when we have labeled data to train the model. Algorithms such as Random Forest and SVM are used to learn from the training data and then classify new, unlabeled data with precision.</p></li>
+<li><p><strong>Unsupervised Learning</strong> comes into play when there is no labeled data available. Methods like k-means and ISODATA cluster the data based on inherent patterns without prior knowledge, which is particularly useful for initial explorations of land cover types in satellite images.</p></li>
+</ul>
+<p>Both learning paradigms are instrumental in advancing the classification and analysis of remote sensing data, with supervised learning providing precision where labels are known, and unsupervised learning offering exploratory insights when such labels are not available.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<ul>
+<li><p>M. Pal(2005) focuses on utilizing the Random Forest (RF) classifier for land cover classification from remote sensing data. It aims to present the results obtained with the RF classifier and to compare its performance with Support Vector Machines (SVMs) in terms of classification accuracy, training time, and user-defined parameters.The study utilized Landsat Enhanced Thematic Mapper Plus (ETM+) data for an area in the UK and involved classifying seven different land cover types. It concluded that the RF classifier performs equally well as SVMs in terms of classification accuracy and training time for the given dataset. The RF classifier also proved to be less sensitive to overfitting, a crucial advantage when working with complex datasets.</p></li>
+<li><p>The table below shows final classification accuracy, kappa coefficient and training time of both classifiers.</p></li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/IMG_4111-01.JPG" class="img-fluid figure-img" width="598"></p>
+<p><img src="images/8.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Hi! I’m Siyu Yang. I earned my undergraduate degree in management from the University of Electronic Science and Technology of China. During my undergraduate studies, I learned a wide range of subjects—not only management knowledge but also plenty of city-related topics such as urban planning, design, and even some coding techniques. I have a keen interest in cities and believe that the future of urban development is inseparable from the advancement of science and technology. This led me to choose CASA for further specialization, aiming to deepen my understanding of how technology can be applied to urban challenges.</p>
-<p>While I have not yet had the opportunity to gain formal professional experience, my academic journey has been rich with involvement in various research projects and volunteer initiatives. One notable project was my engagement in urban planning research for Chengdu Wenjiang District, where I conducted thorough field research and analyzed its developmental challenges. This effort, particularly praised by my professors, underscores my proactive involvement in urban planning. Additionally, my work with a volunteer team, where I participated in teaching and organizing fundraising events in disadvantaged areas, not only taught me the true essence of dedication but also deepened my understanding of the critical role of urban development in enhancing social welfare and education.</p>
-<p>Realizing that data is indispensable to our lives and the development of cities, I began to understand the urgent need for data processing skills. This website is my remotely sensing learning diary. Through this module, I expect to learn how to apply technology, especially remotely sensing technology, to address global challenges such as climate change, urban planning and environmental protection, thereby improving the ability of urban sustainable development.</p>
+<ul>
+<li><p>In a study of my native Xinjiang, China, Tian, Shaohong, et al (2020) developed a Random Forest (RF) model by fusing high-resolution Pleiade-1B data with multi-date Landsat-8 NDVI series to classify wetland landcovers. The modeling process involved feature extraction and optimization, including geometric, spectral, and phenological characteristics, to address the classification challenges in arid wetlands.</p></li>
+<li><p>This is the classification results of the RFC (<strong>a</strong>); SVM (<strong>b</strong>); and ANN (<strong>c</strong>) models.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/9.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+<ul>
+<li>The RF model outperformed other machine learning classifiers, achieving an overall accuracy of 93% and a Kappa coefficient of 0.92, demonstrating its effectiveness in wetland classification. The inclusion of phenological information through NDVI series significantly improved the discrimination between vegetation types with similar spectral features but different growth patterns. This study showcases the potential of multi-sensor data fusion and RF classification in enhancing wetland monitoring and management in arid regions.</li>
+</ul>
+</section>
+<section id="reflection" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<p>The content learned in this class feels very familiar to me, because in the casa0006 class we have also been exposed to the application of machine learning in classification, so I am very curious about how to apply these technologies to remote sensing data. After comparing, I found when applying machine learning for classification tasks, whether in remote sensing data or panel data, the core goal is to categorize entities or pixels into predefined classes based on their features. However, they still have differences:</p>
+<ul>
+<li><p><strong>Data Complexity</strong>: Remote sensing data is spatial-temporal, capturing physical phenomena in images, while panel data tracks variables over time and entities, focusing on temporal dynamics without inherent spatial components.</p></li>
+<li><p><strong>Applications</strong>: Remote sensing primarily serves environmental monitoring and land use classification. In contrast, panel data finds use in economics, social sciences, and epidemiology, emphasizing temporal changes and impacts on entities.</p></li>
+<li><p><strong>Spatial vs.&nbsp;Temporal Analysis</strong>: Spatial autocorrelation is central to remote sensing, requiring spatial analysis techniques. Panel data analysis often addresses time-based autocorrelation and heteroskedasticity, employing models to handle individual-specific effects.</p></li>
+</ul>
+<p>Both applications share the machine learning classification pipeline, including data preprocessing, feature extraction, model selection, and validation, but they adapt these steps to meet their specific data challenges and analytical objectives.</p>
 
 
 </section>
@@ -456,10 +507,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./week5.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5-Google Earth Engine</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week1.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1-Introduction to Remote Sensing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week7.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7-Classification 2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

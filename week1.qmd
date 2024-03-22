@@ -35,3 +35,27 @@ As mentioned above, these "cameras" are sensors. The difference between active a
 ### The choice of data
 
 When selecting remote sensing data, it's crucial to consider both environmental and sensor constraints which dictate the suitability of data types for specific needs. For instance, active remote sensing techniques like radar are preferable during cloudy conditions as they can penetrate cloud cover. High spectral resolution data might be required for detailed vegetation analysis. Thus, the choice of remote sensing data hinges on the balance of these factors alongside the mission's objectives, environmental conditions, and sensor capabilities.
+
+## Application
+
+Remote sensing data's ability to capture detailed information over broad, often inaccessible areas, and at regular intervals, makes it a powerful tool for environmental monitoring and disaster management.
+
+### Sentinel-3
+
+The utilization of Copernicus Sentinel-3 data for monitoring high temperatures in Ahmedabad demonstrates the critical role satellite observations play in urban heat management and climate monitoring. Sentinel-3, with its advanced instruments like the Sea and Land Surface Temperature Radiometer (SLSTR), provides accurate measurements of land surface temperature (LST), which is essential for understanding and addressing the impacts of heatwaves.
+
+[![](images/2.jpg){fig-alt="Heatwave across India" fig-align="center" width="300"}](https://www.esa.int/esearch?q=Ahmedabad)
+
+In Ahmedabad, it reached 47°C, peaking at 65°C in areas around Ahmedabad, marked in deep red.
+
+### In india
+
+Navalgund, Ranganath R., et al(2007) highlights the vital role of India's remote sensing applications across various fields. It showcases advancements in agriculture through crop monitoring and yield estimation, water security through groundwater prospect mapping and reservoir monitoring, and environmental protection by tracking forest cover and biodiversity. Furthermore, it addresses disaster management through real-time flood and drought assessments, demonstrating the significant impact of the Indian Space Programme on sustainable development and disaster resilience.
+
+![](images/2.png){fig-align="center" width="327"}
+
+The graph represents the spectral reflectance characteristics of different targets, including (1) clouds, (2) snow, (3) vegetation, (4) soil, and (5) water, and the IRS-P3 MOS-A, B, and C sensor channels location (provided by DLR, Germany).
+
+## Reflection
+
+This was my first lesson in remote sensing technology. From these, I learned how remote sensing technology allows us to observe and analyze the Earth from different angles and distances. The acquisition and analysis of remote sensing data opens up new perspectives in studying phenomena on the Earth's surface and atmosphere, allowing us to monitor important areas such as agricultural production, water resources management, and environmental changes. In particular, I realized the importance of accurate information and scientific explanations on how to correctly understand the scientific principles of natural phenomena, such as why the sky is blue. Through the correct explanation of Rayleigh scattering, I learned that the shorter wavelength light (blue light) in the atmosphere scatters more strongly than the longer wavelength light (such as red light), thus causing the blue sky we see. Additionally, this learning experience reinforced my understanding of the natural world by highlighting the importance of continuous learning and verifying the accuracy of the information we receive.
