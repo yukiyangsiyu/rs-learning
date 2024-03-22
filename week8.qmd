@@ -12,7 +12,7 @@ In the context of UHI, remote sensing data is invaluable for policy and decision
 
 In summary, remote sensing stands as an indispensable ally in the quest to understand and mitigate the UHI effect. It provides the detailed, nuanced temperature data necessary for cities to enact policies that will effectively cool urban environments and reverse the trend of rising urban temperatures.
 
-### Application
+## Application
 
 -   Radiometer instrument data from the Copernicus Sentinel-3 mission on 2023/07/17 shows extreme surface temperature conditions in some European cities. Surface temperatures reached 45°C in Bucharest and Rome, and 50°C in Catania and Nicosia. Such heat events are likely to become more frequent and severe as climate change intensifies. By measuring the energy radiated from the Earth through satellite instruments, scientists can better understand and predict weather and climate patterns and monitor natural disasters such as fires, which is particularly important for agriculture and urban planning.
 
