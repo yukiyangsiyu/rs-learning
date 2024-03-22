@@ -1,4 +1,29 @@
-# References {.unnumbered}
+# References
 
-::: {#refs}
-:::
+Navalgund, Ranganath R., et al. \"Remote Sensing Applications: An Overview.\" *Current Science*, vol. 93, no. 12, 2007, pp. 1747--1766, www.jstor.org/stable/24102069?saml_data=eyJzYW1sVG9rZW4iOiJlODcwNjFkNC01YzA1LTQ1YWItYjIzZS0xZWI2NDgxZGU0OTUiLCJpbnN0aXR1dGlvbklkcyI6WyIxOGVlZTJmYS1mODcxLTQwYTktODI4NS1mNTRlYzdhMDM4MjciXX0&seq=1. Accessed 22 Mar. 2024.
+
+\"Search.\" *Www.esa.int*, www.esa.int/esearch?q=india. Accessed 22 Mar. 2024.
+
+Irons, James R, and Gary W Petersen. \"Texture Transforms of Remote Sensing Data.\" *Remote Sensing of Environment*, vol. 11, Jan. 1981, pp. 359--370, https://doi.org/10.1016/0034-4257(81)90033-x.
+
+Pei, Fengsong, et al. \"Application of Normalized Difference Vegetation Index (NDVI) for the Detection of Extreme Precipitation Change.\" *Forests*, vol. 12, no. 5, 9 May 2021, p. 594, <https://doi.org/10.3390/f12050594>.
+
+*AHMEDABAD HEAT ACTION PLAN 2016 GUIDE to EXTREME HEAT PLANNING in AHMEDABAD, INDIA EASY READ VERSION*.
+
+Azhar, Gulrez, et al. \"Heat Wave Vulnerability Mapping for India.\" *International Journal of Environmental Research and Public Health*, vol. 14, no. 4, 30 Mar. 2017, p. 357, www.ncbi.nlm.nih.gov/pmc/articles/PMC5409558/, https://doi.org/10.3390/ijerph14040357.
+
+Knowlton, Kim, et al. \"Development and Implementation of South Asia\'s First Heat-Health Action Plan in Ahmedabad (Gujarat, India).\" *International Journal of Environmental Research and Public Health*, vol. 11, no. 4, 25 Mar. 2014, pp. 3473--3492, <https://doi.org/10.3390/ijerph110403473>.
+
+Tamiminia, Haifa, et al. \"Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.\" *ISPRS Journal of Photogrammetry and Remote Sensing*, vol. 164, June 2020, pp. 152--170, <https://doi.org/10.1016/j.isprsjprs.2020.04.001>.
+
+Pal, M. \"Random Forest Classifier for Remote Sensing Classification.\" *International Journal of Remote Sensing*, vol. 26, no. 1, Jan. 2005, pp. 217--222, https://doi.org/10.1080/01431160412331269698.
+
+Tian, Shaohong, et al. \"Random Forest Classification of Wetland Landcovers from Multi-Sensor Data in the Arid Region of Xinjiang, China.\" *Remote Sensing*, vol. 8, no. 11, 1 Nov. 2016, p. 954, www.mdpi.com/2072-4292/8/11/954/htm, https://doi.org/10.3390/rs8110954. Accessed 20 May 2020.
+
+Liu, Kai, et al. \"An Assessment of Urban Surface Energy Fluxes Using a Sub-Pixel Remote Sensing Analysis: A Case Study in Suzhou, China.\" *ISPRS International Journal of Geo-Information*, vol. 5, no. 2, 1 Feb. 2016, p. 11, www.mdpi.com/2220-9964/5/2/11, https://doi.org/10.3390/ijgi5020011. Accessed 22 Mar. 2024.
+
+Rahman, Atiqur, et al. \"Assessment of Land Use/Land Cover Change in the North-West District of Delhi Using Remote Sensing and GIS Techniques.\" *Journal of the Indian Society of Remote Sensing*, vol. 40, no. 4, 5 Jan. 2012, pp. 689--697, <https://doi.org/10.1007/s12524-011-0165-4>.
+
+\"Europe Braces for Sweltering July.\" *Www.esa.int*, www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Europe_braces_for_sweltering_July.
+
+Streutker, D. R. \"A Remote Sensing Study of the Urban Heat Island of Houston, Texas.\" *International Journal of Remote Sensing*, vol. 23, no. 13, Jan. 2002, pp. 2595--2608, https://doi.org/10.1080/01431160110115023.
